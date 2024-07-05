@@ -1,10 +1,13 @@
 package com.bod.tis.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
+
 public class HomeController {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	@GetMapping("/")
+	public String home() {
+		return "board";
 	}
+
 
 }
